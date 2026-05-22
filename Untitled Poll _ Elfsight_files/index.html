@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- saved from url=(0148)https://universe-static.elfsightcdn.com/app-releases/poll/stable/v1.5.4/43f894abfd5d1a4227919d3916baf445d632bbab/configurator/index.html?language=en -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.ͼ1.cm-focused {outline: 1px dotted #212121;}
+.ͼ1 {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
+.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0; overflow-anchor: none;}
+.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
+.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; min-height: 100%; padding: 4px 0; outline: none;}
+.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
+.ͼ2 .cm-content {caret-color: black;}
+.ͼ3 .cm-content {caret-color: white;}
+.ͼ1 .cm-line {display: block; padding: 0 2px 0 6px;}
+.ͼ1 .cm-layer > * {position: absolute;}
+.ͼ1 .cm-layer {position: absolute; left: 0; top: 0; contain: size style;}
+.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
+.ͼ3 .cm-selectionBackground {background: #222;}
+.ͼ2.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #d7d4f0;}
+.ͼ3.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #233;}
+.ͼ1 .cm-cursorLayer {pointer-events: none;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
+@keyframes cm-blink {50% {opacity: 0;}}
+@keyframes cm-blink2 {50% {opacity: 0;}}
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
+.ͼ1 .cm-cursor {display: none;}
+.ͼ3 .cm-cursor {border-left-color: #ddd;}
+.ͼ1 .cm-dropCursor {position: absolute;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer .cm-cursor {display: block;}
+.ͼ1 .cm-iso {unicode-bidi: isolate;}
+.ͼ1 .cm-announced {position: fixed; top: -10000px;}
+@media print {.ͼ1 .cm-announced {display: none;}}
+.ͼ2 .cm-activeLine {background-color: #cceeff44;}
+.ͼ3 .cm-activeLine {background-color: #99eeff33;}
+.ͼ2 .cm-specialChar {color: red;}
+.ͼ3 .cm-specialChar {color: #f78;}
+.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; z-index: 200;}
+.ͼ1 .cm-gutters-before {inset-inline-start: 0;}
+.ͼ1 .cm-gutters-after {inset-inline-end: 0;}
+.ͼ2 .cm-gutters.cm-gutters-before {border-right-width: 1px;}
+.ͼ2 .cm-gutters.cm-gutters-after {border-left-width: 1px;}
+.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border: 0px solid #ddd;}
+.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
+.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
+.ͼ1 .cm-gutterElement {box-sizing: border-box;}
+.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
+.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
+.ͼ3 .cm-activeLineGutter {background-color: #222227;}
+.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0; z-index: 300;}
+.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
+.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
+.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
+.ͼ3 .cm-panels {background-color: #333338; color: white;}
+.ͼ1 .cm-dialog label {font-size: 80%;}
+.ͼ1 .cm-dialog {padding: 2px 19px 4px 6px; position: relative;}
+.ͼ1 .cm-dialog-close {position: absolute; top: 3px; right: 4px; background-color: inherit; border: none; font: inherit; font-size: 14px; padding: 0;}
+.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
+.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
+.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top; user-select: none;}
+.ͼ1 .cm-highlightSpace {background-image: radial-gradient(circle at 50% 55%, #aaa 20%, transparent 5%); background-position: center;}
+.ͼ1 .cm-highlightTab {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="20"><path stroke="%23888" stroke-width="1" fill="none" d="M1 10H196L190 5M190 15L196 10M197 4L197 16"/></svg>'); background-size: auto 100%; background-position: right 90%; background-repeat: no-repeat;}
+.ͼ1 .cm-trailingSpace {background-color: #ff332255;}
+.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
+.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
+.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
+.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
+.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
+.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
+.ͼ2 .cm-textfield {background-color: white;}
+.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
+.ͼ1 .cm-selectionMatch {background-color: #99ff7780;}
+.ͼ1 .cm-searchMatch .cm-selectionMatch {background-color: transparent;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > li, .ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > completion-section {padding: 1px 3px; line-height: 1.2;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > li {overflow-x: hidden; text-overflow: ellipsis; cursor: pointer;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > completion-section {display: list-item; border-bottom: 1px solid silver; padding-left: 0.5em; opacity: 0.7;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul {font-family: monospace; white-space: nowrap; overflow: hidden auto; max-width: 700px; max-width: min(700px, 95vw); min-width: 250px; max-height: 10em; height: 100%; list-style: none; margin: 0; padding: 0;}
+.ͼ2 .cm-tooltip-autocomplete ul li[aria-selected] {background: #17c; color: white;}
+.ͼ2 .cm-tooltip-autocomplete-disabled ul li[aria-selected] {background: #777;}
+.ͼ3 .cm-tooltip-autocomplete ul li[aria-selected] {background: #347; color: white;}
+.ͼ3 .cm-tooltip-autocomplete-disabled ul li[aria-selected] {background: #444;}
+.ͼ1 .cm-completionListIncompleteTop:before, .ͼ1 .cm-completionListIncompleteBottom:after {content: "···"; opacity: 0.5; display: block; text-align: center;}
+.ͼ1 .cm-tooltip.cm-completionInfo {position: absolute; padding: 3px 9px; width: max-content; max-width: 400px; box-sizing: border-box; white-space: pre-line;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left {right: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right {left: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left-narrow {right: 30px;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right-narrow {left: 30px;}
+.ͼ2 .cm-snippetField {background-color: #00000022;}
+.ͼ3 .cm-snippetField {background-color: #ffffff22;}
+.ͼ1 .cm-snippetFieldPosition {vertical-align: text-top; width: 0; height: 1.15em; display: inline-block; margin: 0 -0.7px -.7em; border-left: 1.4px dotted #888;}
+.ͼ1 .cm-completionMatchedText {text-decoration: underline;}
+.ͼ1 .cm-completionDetail {margin-left: 0.5em; font-style: italic;}
+.ͼ1 .cm-completionIcon {font-size: 90%; width: .8em; display: inline-block; text-align: center; padding-right: .6em; opacity: 0.6; box-sizing: content-box;}
+.ͼ1 .cm-completionIcon-function:after, .ͼ1 .cm-completionIcon-method:after {content: 'ƒ';}
+.ͼ1 .cm-completionIcon-class:after {content: '○';}
+.ͼ1 .cm-completionIcon-interface:after {content: '◌';}
+.ͼ1 .cm-completionIcon-variable:after {content: '𝑥';}
+.ͼ1 .cm-completionIcon-constant:after {content: '𝐶';}
+.ͼ1 .cm-completionIcon-type:after {content: '𝑡';}
+.ͼ1 .cm-completionIcon-enum:after {content: '∪';}
+.ͼ1 .cm-completionIcon-property:after {content: '□';}
+.ͼ1 .cm-completionIcon-keyword:after {content: '🔑︎';}
+.ͼ1 .cm-completionIcon-namespace:after {content: '▢';}
+.ͼ1 .cm-completionIcon-text:after {content: 'abc'; font-size: 50%; vertical-align: middle;}
+.ͼ1 .cm-tooltip {z-index: 500; box-sizing: border-box;}
+.ͼ2 .cm-tooltip {border: 1px solid #bbb; background-color: #f5f5f5;}
+.ͼ2 .cm-tooltip-section:not(:first-child) {border-top: 1px solid #bbb;}
+.ͼ3 .cm-tooltip {background-color: #333338; color: white;}
+.ͼ1 .cm-tooltip-arrow:before, .ͼ1 .cm-tooltip-arrow:after {content: ''; position: absolute; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:before {border-top: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:after {border-top: 7px solid #f5f5f5; bottom: 1px;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow {bottom: -7px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:before {border-bottom: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:after {border-bottom: 7px solid #f5f5f5; top: 1px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow {top: -7px;}
+.ͼ1 .cm-tooltip-arrow {height: 7px; width: 14px; position: absolute; z-index: -1; overflow: hidden;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:before {border-top-color: #333338; border-bottom-color: #333338;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:after {border-top-color: transparent; border-bottom-color: transparent;}
+.ͼ1.cm-focused .cm-matchingBracket {background-color: #328c8252;}
+.ͼ1.cm-focused .cm-nonmatchingBracket {background-color: #bb555544;}
+.ͼ1 .cm-foldPlaceholder {background-color: #eee; border: 1px solid #ddd; color: #888; border-radius: .2em; margin: 0 1px; padding: 0 1px; cursor: pointer;}
+.ͼ1 .cm-foldGutter span {padding: 0 1px; cursor: pointer;}
+.ͼ5c {color: #cf6edf;}
+.ͼ5d {color: #56c8d8;}
+.ͼ5e {color: #facf4e;}
+.ͼ5f {color: #bdbdbd;}
+.ͼ5g {color: #56c8d8;}
+.ͼ5h {color: #cf6edf;}
+.ͼ5i {color: #facf4e;}
+.ͼ5j {color: #fa5788;}
+.ͼ5k {color: #cf6edf;}
+.ͼ5l {color: #ff5f52;}
+.ͼ5m {color: #ffad42;}
+.ͼ5n {color: #ffad42;}
+.ͼ5o {color: #7186f0;}
+.ͼ5p {color: #99d066;}
+.ͼ5q {color: #ff5f52;}
+.ͼ5r {color: #606f7a;}
+.ͼ5s {color: #bdbdbd;}
+.ͼ5t {color: #ff5f52;}
+.ͼ5u {color: #6abf69;}
+.ͼ5v {color: #99d066;}
+.ͼ5w {color: #56c8d8; text-decoration: underline; text-underline-position: under;}
+.ͼ5x {color: #facf4e;}
+.ͼ5y {color: #707d8b;}
+.ͼ5z {color: #707d8b; font-style: italic;}
+.ͼ60 {color: #bdbdbd;}
+.ͼ61 {font-weight: bold; color: #ff5f52;}
+.ͼ62 {font-style: italic; color: #99d066;}
+.ͼ63 {text-decoration: line-through;}
+.ͼ64 {font-weight: bold; color: #facf4e;}
+.ͼ65 {font-weight: bold; color: #facf4e;}
+.ͼ66 {font-weight: bold; color: #facf4e;}
+.ͼ67 {color: #facf4e;}
+.ͼ68 {color: #56c8d8;}
+.ͼ69 {color: #ff5f52;}
+.ͼ6a {color: #56c8d8;}
+.ͼ6b {color: #606f7a; border-bottom: 1px dotted #ff5f52;}
+.ͼ5b .cm-gutters {background-color: #464646; color: #8F8F8F;}
+.ͼ5b {background-color: #2e3235; color: #bdbdbd; font-size: 12px;}
+.ͼ5b .cm-content {caret-color: white;}
+.ͼ5b .cm-cursor, .ͼ5b .cm-dropCursor {border-left-color: white;}
+.ͼ5b .cm-activeLine {background-color: #5C5C5C;}
+.ͼ5b .cm-activeLineGutter {color: #8F8F8F; background-color: #5C5C5C;}
+.ͼ5b.cm-focused .cm-selectionBackground, .ͼ5b .cm-line::selection, .ͼ5b .cm-selectionLayer .cm-selectionBackground, .ͼ5b .cm-content ::selection {background: #ffffff33 !important;}
+.ͼ5b .cm-selectionMatch {background-color: #ffffff19;}
+.ͼ3z {color: #cf6edf;}
+.ͼ40 {color: #56c8d8;}
+.ͼ41 {color: #facf4e;}
+.ͼ42 {color: #bdbdbd;}
+.ͼ43 {color: #56c8d8;}
+.ͼ44 {color: #cf6edf;}
+.ͼ45 {color: #facf4e;}
+.ͼ46 {color: #fa5788;}
+.ͼ47 {color: #cf6edf;}
+.ͼ48 {color: #ff5f52;}
+.ͼ49 {color: #ffad42;}
+.ͼ4a {color: #ffad42;}
+.ͼ4b {color: #7186f0;}
+.ͼ4c {color: #99d066;}
+.ͼ4d {color: #ff5f52;}
+.ͼ4e {color: #606f7a;}
+.ͼ4f {color: #bdbdbd;}
+.ͼ4g {color: #ff5f52;}
+.ͼ4h {color: #6abf69;}
+.ͼ4i {color: #99d066;}
+.ͼ4j {color: #56c8d8; text-decoration: underline; text-underline-position: under;}
+.ͼ4k {color: #facf4e;}
+.ͼ4l {color: #707d8b;}
+.ͼ4m {color: #707d8b; font-style: italic;}
+.ͼ4n {color: #bdbdbd;}
+.ͼ4o {font-weight: bold; color: #ff5f52;}
+.ͼ4p {font-style: italic; color: #99d066;}
+.ͼ4q {text-decoration: line-through;}
+.ͼ4r {font-weight: bold; color: #facf4e;}
+.ͼ4s {font-weight: bold; color: #facf4e;}
+.ͼ4t {font-weight: bold; color: #facf4e;}
+.ͼ4u {color: #facf4e;}
+.ͼ4v {color: #56c8d8;}
+.ͼ4w {color: #ff5f52;}
+.ͼ4x {color: #56c8d8;}
+.ͼ4y {color: #606f7a; border-bottom: 1px dotted #ff5f52;}
+.ͼ3y .cm-gutters {background-color: #464646; color: #8F8F8F;}
+.ͼ3y {background-color: #2e3235; color: #bdbdbd; font-size: 12px;}
+.ͼ3y .cm-content {caret-color: white;}
+.ͼ3y .cm-cursor, .ͼ3y .cm-dropCursor {border-left-color: white;}
+.ͼ3y .cm-activeLine {background-color: #5C5C5C;}
+.ͼ3y .cm-activeLineGutter {color: #8F8F8F; background-color: #5C5C5C;}
+.ͼ3y.cm-focused .cm-selectionBackground, .ͼ3y .cm-line::selection, .ͼ3y .cm-selectionLayer .cm-selectionBackground, .ͼ3y .cm-content ::selection {background: #ffffff33 !important;}
+.ͼ3y .cm-selectionMatch {background-color: #ffffff19;}
+.ͼ15 {background-color: #fff;}
+.ͼ5 {color: #404740;}
+.ͼ6 {text-decoration: underline;}
+.ͼ7 {text-decoration: underline; font-weight: bold;}
+.ͼ8 {font-style: italic;}
+.ͼ9 {font-weight: bold;}
+.ͼa {text-decoration: line-through;}
+.ͼb {color: #708;}
+.ͼc {color: #219;}
+.ͼd {color: #164;}
+.ͼe {color: #a11;}
+.ͼf {color: #e40;}
+.ͼg {color: #00f;}
+.ͼh {color: #30a;}
+.ͼi {color: #085;}
+.ͼj {color: #167;}
+.ͼk {color: #256;}
+.ͼl {color: #00c;}
+.ͼm {color: #940;}
+.ͼn {color: #f00;}
+.ͼ6i {height: 336px;}
+.ͼ6i .cm-scroller {height: 100% !important;}
+.ͼ6h {height: 336px;}
+.ͼ6h .cm-scroller {height: 100% !important;}
+.ͼ6g {height: 336px;}
+.ͼ6g .cm-scroller {height: 100% !important;}
+.ͼ6f {height: 336px;}
+.ͼ6f .cm-scroller {height: 100% !important;}
+.ͼ6e {height: 336px;}
+.ͼ6e .cm-scroller {height: 100% !important;}
+.ͼ6d {height: 336px;}
+.ͼ6d .cm-scroller {height: 100% !important;}
+.ͼ6c {height: 336px;}
+.ͼ6c .cm-scroller {height: 100% !important;}
+.ͼ5a {height: 336px;}
+.ͼ5a .cm-scroller {height: 100% !important;}
+.ͼ59 {height: 336px;}
+.ͼ59 .cm-scroller {height: 100% !important;}
+.ͼ57 {height: 336px;}
+.ͼ57 .cm-scroller {height: 100% !important;}
+.ͼ55 {height: 336px;}
+.ͼ55 .cm-scroller {height: 100% !important;}
+.ͼ54 {height: 336px;}
+.ͼ54 .cm-scroller {height: 100% !important;}
+.ͼ53 {height: 336px;}
+.ͼ53 .cm-scroller {height: 100% !important;}
+.ͼ52 {height: 336px;}
+.ͼ52 .cm-scroller {height: 100% !important;}
+.ͼ51 {height: 336px;}
+.ͼ51 .cm-scroller {height: 100% !important;}
+.ͼ50 {height: 336px;}
+.ͼ50 .cm-scroller {height: 100% !important;}
+.ͼ4z {height: 336px;}
+.ͼ4z .cm-scroller {height: 100% !important;}
+.ͼ1a {height: 336px;}
+.ͼ1a .cm-scroller {height: 100% !important;}
+.ͼ19 {height: 336px;}
+.ͼ19 .cm-scroller {height: 100% !important;}
+.ͼ17 {height: 336px;}
+.ͼ17 .cm-scroller {height: 100% !important;}
+.ͼ4 .cm-line ::selection, .ͼ4 .cm-line::selection {background-color: transparent !important;}
+.ͼ4 .cm-line {caret-color: transparent !important;}
+.ͼ4 .cm-content :focus::selection, .ͼ4 .cm-content :focus ::selection {background-color: Highlight !important;}
+.ͼ4 .cm-content :focus {caret-color: initial !important;}
+.ͼ4 .cm-content {caret-color: transparent !important;}
+</style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://universe-static.elfsightcdn.com/app-releases/poll/stable/v1.5.4/43f894abfd5d1a4227919d3916baf445d632bbab/configurator/favicon.ico">
+    <title>Configurator</title>
+  <style id="_goober"> @keyframes go2264125279{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go3020080000{from{transform:scale(0);opacity:0;}to{transform:scale(1);opacity:1;}}@keyframes go463499852{from{transform:scale(0) rotate(90deg);opacity:0;}to{transform:scale(1) rotate(90deg);opacity:1;}}@keyframes go1268368563{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}@keyframes go1310225428{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go651618207{0%{height:0;width:0;opacity:0;}40%{height:0;width:6px;opacity:1;}100%{opacity:1;height:10px;}}@keyframes go901347462{from{transform:scale(0.6);opacity:0.4;}to{transform:scale(1);opacity:1;}}.go4109123758{z-index:9999;}.go4109123758 > *{pointer-events:auto;}</style><style data-styled="active" data-styled-version="6.1.16"></style><link rel="modulepreload" as="script" crossorigin="" href="https://universe-static.elfsightcdn.com/app-releases/poll/stable/v1.5.4/43f894abfd5d1a4227919d3916baf445d632bbab/configurator/assets/index-CE4tJDph.js"><link rel="modulepreload" as="script" crossorigin="" href="https://universe-static.elfsightcdn.com/app-releases/poll/stable/v1.5.4/43f894abfd5d1a4227919d3916baf445d632bbab/configurator/assets/index-BuykVmbB.js"><link rel="modulepreload" as="script" crossorigin="" href="https://universe-static.elfsightcdn.com/app-releases/poll/stable/v1.5.4/43f894abfd5d1a4227919d3916baf445d632bbab/configurator/assets/index-Vcq4gwWv.js"><link rel="modulepreload" as="script" crossorigin="" href="https://universe-static.elfsightcdn.com/app-releases/poll/stable/v1.5.4/43f894abfd5d1a4227919d3916baf445d632bbab/configurator/assets/index-BoPlqbuJ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://universe-static.elfsightcdn.com/app-releases/poll/stable/v1.5.4/43f894abfd5d1a4227919d3916baf445d632bbab/configurator/assets/index-BSnOs--c.js"><link rel="modulepreload" as="script" crossorigin="" href="https://universe-static.elfsightcdn.com/app-releases/poll/stable/v1.5.4/43f894abfd5d1a4227919d3916baf445d632bbab/configurator/assets/index-CI-C22QC.js"><link rel="modulepreload" as="script" crossorigin="" href="https://universe-static.elfsightcdn.com/app-releases/poll/stable/v1.5.4/43f894abfd5d1a4227919d3916baf445d632bbab/configurator/assets/index-CPZTxIHs.js"></head>
+  <body>
+    <div id="root"><div data-testid="configurator" class="App__Container-sc-3dca1d11-0 dXCiC"><div data-target="window-modal" class="ModalNest-sc-347ae95-0 jWkzAm"></div><div class="App__Main-sc-3dca1d11-1 evpcQK"><div lang="en" class="SettingsPanel__Container-sc-87059a05-0 erWRLh"><div data-target="panel-modal" class="ModalNest-sc-347ae95-0 jWkzAp"></div><div data-target="confirmation-modal" class="ModalNest-sc-347ae95-0 jWkzAk"></div><div data-target="toast-modal" class="ModalNest-sc-347ae95-0 jWkzAn"><div><div data-rht-toaster="" style="position: absolute; z-index: 9999; inset: 16px 16px 8px; pointer-events: none;"></div></div></div><div class="Menu__Container-sc-11f808ef-2 kxFjYJ"><div class="Menu__ItemContainer-sc-11f808ef-0 czGixq"><button class="Interactable__Container-sc-2152aa09-0 cfHKQO MenuItem__Container-sc-547239b6-0 cQDdPc"><div class="MenuItem__Icon-sc-547239b6-1 uYrHA"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 21a.967.967 0 0 1-.712-.288A.968.968 0 0 1 2 20V10a.97.97 0 0 1 .288-.713A.968.968 0 0 1 3 9h3.5c.283 0 .52.096.713.287.191.192.287.43.287.713v10a.97.97 0 0 1-.287.712A.967.967 0 0 1 6.5 21H3Zm7.25 0a.967.967 0 0 1-.713-.288A.968.968 0 0 1 9.25 20V4a.97.97 0 0 1 .287-.712A.968.968 0 0 1 10.25 3h3.5a.97.97 0 0 1 .713.288.968.968 0 0 1 .287.712v16a.97.97 0 0 1-.287.712.968.968 0 0 1-.713.288h-3.5Zm7.25 0a.968.968 0 0 1-.712-.288A.968.968 0 0 1 16.5 20v-8a.97.97 0 0 1 .288-.713A.968.968 0 0 1 17.5 11H21a.97.97 0 0 1 .712.287c.192.192.288.43.288.713v8c0 .283-.096.52-.288.712A.968.968 0 0 1 21 21h-3.5Z"></path></svg></div><div class="MenuItem__Name-sc-547239b6-2 gOhaoU">Poll</div></button><button class="Interactable__Container-sc-2152aa09-0 cfHKQO MenuItem__Container-sc-547239b6-0 cQDdPc"><div class="MenuItem__Icon-sc-547239b6-1 uYrHA"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c5.522 0 10 3.978 10 8.889a5.558 5.558 0 0 1-5.556 5.555h-1.966c-.922 0-1.667.745-1.667 1.667 0 .422.167.811.422 1.1A1.664 1.664 0 0 1 12 22C6.478 22 2 17.522 2 12S6.478 2 12 2ZM6 9c-1.107 0-2 .893-2 2s.893 2 2 2 2-.893 2-2-.893-2-2-2Zm12 0c-1.107 0-2 .893-2 2s.893 2 2 2 2-.893 2-2-.893-2-2-2ZM9 4c-1.107 0-2 .893-2 2s.893 2 2 2 2-.893 2-2-.893-2-2-2Zm6 0c-1.107 0-2 .893-2 2s.893 2 2 2 2-.893 2-2-.893-2-2-2Z"></path></svg></div><div class="MenuItem__Name-sc-547239b6-2 gOhaoU">Theme</div></button><button class="Interactable__Container-sc-2152aa09-0 cfHKQO MenuItem__Container-sc-547239b6-0 cQDdPc"><div class="MenuItem__Icon-sc-547239b6-1 cKbTJu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 1a2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1 1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2Zm0 8a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"></path></svg></div><div class="MenuItem__Name-sc-547239b6-2 dddZfK">Settings</div></button><button class="Interactable__Container-sc-2152aa09-0 cfHKQO MenuItem__Container-sc-547239b6-0 cQDdPc Menu__HelpMenuItem-sc-11f808ef-1 dBBkut"><div class="MenuItem__Icon-sc-547239b6-1 uYrHA"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2Zm.765 12.945H11.28c-.1 0-.185.035-.255.105a.345.345 0 0 0-.098.183l-.007.072v1.335c0 .1.035.185.105.255a.345.345 0 0 0 .183.098l.072.007h1.485c.11 0 .2-.035.27-.105a.345.345 0 0 0 .098-.183l.007-.072v-1.335c0-.1-.038-.185-.113-.255a.376.376 0 0 0-.19-.098l-.072-.007ZM12.15 6.35c-.8 0-1.495.147-2.085.443-.59.295-1.042.682-1.357 1.162A2.96 2.96 0 0 0 8.205 9.5c0 .11.033.2.098.27a.316.316 0 0 0 .175.098l.072.007h1.305c.22 0 .365-.115.435-.345.2-.97.785-1.455 1.755-1.455.43 0 .797.12 1.103.36.305.24.437.565.397.975-.02.24-.113.47-.277.69-.166.22-.418.5-.758.84-.44.44-.785.84-1.035 1.2-.25.36-.4.775-.45 1.245-.01.11-.015.27-.015.48 0 .08.03.15.09.21a.297.297 0 0 0 .16.084l.065.006h1.485c.11 0 .195-.03.255-.09a.822.822 0 0 0 .165-.285c.01-.09.035-.26.075-.51.06-.28.178-.542.353-.787s.422-.538.742-.878c.44-.48.772-.905.998-1.275.225-.37.337-.805.337-1.305 0-.44-.122-.865-.367-1.275-.245-.41-.636-.747-1.17-1.013-.536-.264-1.218-.397-2.048-.397Z"></path></svg></div><div class="MenuItem__Name-sc-547239b6-2 gOhaoU">Help</div></button></div></div><div class="SettingsPanel__MainPane-sc-87059a05-1 kRJIja"><div class="SettingsPanelPage__Container-sc-fb7eaeab-0 eGKOIT"><div class="SettingsPanelPage__Inner-sc-fb7eaeab-1 eihJNL"><div class="PageLayout__Container-sc-cbd87c7a-0 gFbKNV"><div class="PageLayout__Top-sc-cbd87c7a-1 bSOaIZ"><div class="HeaderLayout__Container-sc-365e0dfe-0 ciISle"><div class="HeaderLayout__Left-sc-365e0dfe-1 coZpRR"><div class="Tooltip__TooltipTarget-sc-1881ee5b-0 NbpZQ"><button class="Interactable__Container-sc-2152aa09-0 cfHKQO ButtonLayout__Container-sc-4151cb4b-1 gTUNkU"><div class="ButtonLayout__Inner-sc-4151cb4b-0 bAOZTj"><div class="Icon__IconContainer-sc-7af45730-0 jxmxxt"><div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.076 3.076a.6.6 0 0 1 .918.765l-.07.083L6.85 10l6.075 6.076a.6.6 0 0 1 .07.765l-.07.083a.6.6 0 0 1-.765.07l-.083-.07-6.5-6.5a.6.6 0 0 1-.07-.765l.07-.083 6.5-6.5Z"></path></svg></div></div><div class="Ellipsis__Container-sc-351e40ed-0 kOqVWO">Back</div></div></button></div></div><div class="HeaderLayout__Main-sc-365e0dfe-2 jpslt"><div class="HeaderLayout__Title-sc-365e0dfe-4 iaGhVm">Custom CSS</div></div><div class="HeaderLayout__Right-sc-365e0dfe-3 jEZXYM"></div></div></div><div class="PageLayout__Divider-sc-cbd87c7a-2 YYjeV hidden"></div><div class="PageLayout__MainContainer-sc-cbd87c7a-3 iVpGfI"><div class="GroupLayout__Container-sc-cdd117fe-0 bSHCKn"><div class="GroupLayout__Body-sc-cdd117fe-2 clNbNc"><div class="css-editor__Container-sc-678ff9a0-1 hPCpyk"><div class="ControlLayout__Main-sc-38f438f1-6 eFVywJ"><div class="code-editor__StyledCodeMirror-sc-a8b205b8-0 dLXbpT"><div class="cm-theme" inputmode="text"><div class="cm-editor ͼ1 ͼ3 ͼ4 ͼ6i ͼ5b"><div class="cm-announced" aria-live="polite"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters cm-gutters-before" aria-hidden="true" style="min-height: 80px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">9</div><div class="cm-gutterElement" style="height: 16px; margin-top: 8px;">1</div><div class="cm-gutterElement" style="height: 16px;">2</div><div class="cm-gutterElement" style="height: 16px;">3</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 16px;">4</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement" style="height: 16px; margin-top: 8px;"><span title="Fold line">⌄</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 16px; margin-top: 32px;"></div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" writingsuggestions="false" translate="no" contenteditable="true" style="tab-size: 4;" class="cm-content" role="textbox" aria-multiline="true" aria-placeholder="Enter your CSS Code..." data-language="css" aria-autocomplete="list"><div class="cm-line"><span class="ͼ5q">[</span><span class="ͼ5s">class</span><span class="ͼ5o">*=</span><span class="ͼ5v">'Content__WidgetContainer-sc'</span><span class="ͼ5q">]</span> <span class="cm-matchingBracket"><span class="ͼ5k">{</span></span></div><div class="cm-line">    <span class="ͼ5e">margin-left</span>: <span class="ͼ5m">0</span> <span class="ͼ5m">!important</span><span class="ͼ5j">;</span></div><div class="cm-line">    <span class="ͼ5e">margin-right</span>: <span class="ͼ68">auto</span> <span class="ͼ5m">!important</span><span class="ͼ5j">;</span></div><div class="cm-activeLine cm-line"><span class="cm-matchingBracket"><span class="ͼ5k">}</span></span></div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms; animation-name: cm-blink;"><div class="cm-cursor cm-cursor-primary" style="left: 37.2083px; top: 56.6667px; height: 14.6667px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></div></div><button class="Interactable__Container-sc-2152aa09-0 cfHKQO css-editor__ActionButton-sc-678ff9a0-0 coBsTP"><div class="Tooltip__TooltipTarget-sc-1881ee5b-0 NbpZQ"><div class="Icon__IconContainer-sc-7af45730-0 jxmxxt"><div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.6 4a.6.6 0 0 0-.255-.491l-.343-.11H12a.6.6 0 1 0 0 1.2h2.551L10.91 8.243a.6.6 0 0 0 .848.849L15.4 5.448V8a.6.6 0 1 0 1.2 0V4Zm-7.51 6.909a.6.6 0 0 1 0 .848L5.449 15.4H8a.6.6 0 1 1 0 1.2H4a.598.598 0 0 1-.6-.6v-4a.6.6 0 1 1 1.2 0v2.551l3.642-3.642a.6.6 0 0 1 .849 0Z"></path></svg></div></div></div></button></div></div></div><div class="GroupLayout__Container-sc-cdd117fe-0 bSHCKn"><div class="GroupLayout__Body-sc-cdd117fe-2 clNbNc"><div class="GroupLayout__Container-sc-cdd117fe-0 bSHCKn"><div class="GroupLayout__Body-sc-cdd117fe-2 clNbNc"><div class="ControlLayout__Container-sc-38f438f1-0 item-control__Container-sc-f5fa9495-0 fumxeI jSxzXr"><div class="item-control__Wrapper-sc-f5fa9495-1 UlcaG"><div class="item-control__Slot-sc-f5fa9495-2 loxrxx"><div class="item-info__Container-sc-9b8b8aae-0 fuQYhp"><div class="Icon__IconContainer-sc-7af45730-0 ezRoNJ"><div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><rect width="32" height="32" fill="#fff" rx="4"></rect><g clip-path="url(#configurator-wishlist-multicolor_svg__a)"><g clip-path="url(#configurator-wishlist-multicolor_svg__b)"><path fill="#31324C" d="M9.062 5.587c-.074-.746.653-1.474 1.4-1.4 2.161.001 4.323.001 6.484-.001.252-.002.543.004.684.25.073.232.108.551-.092.728-.114.155-.327.13-.496.148-2.28.014-4.56-.022-6.839.016-.006.181-.015.362-.016.543v19.136c.028.604-.243 1.168-.56 1.664 4.97.04 9.942.004 14.913.018.951.063 1.837-.823 1.773-1.774.004-1.724-.01-3.45.005-5.174a.51.51 0 0 1 .557-.55.51.51 0 0 1 .557.55c.016 1.722-.001 3.445.007 5.167.042.791-.326 1.567-.872 2.124-.53.466-1.221.8-1.937.782a26130.4 26130.4 0 0 0-17.26 0c-1.483.024-2.84-1.322-2.808-2.81.003-1.754-.002-3.51.001-5.264-.042-.516.355-.936.764-1.186.186-.128.421-.107.635-.117 1.032-.002 2.066.006 3.098-.002.005-4.283.002-8.565.002-12.848ZM5.703 19.578c-.037 1.779-.004 3.558-.016 5.337-.067.948.825 1.856 1.78 1.773.884-.04 1.656-.884 1.596-1.772-.002-1.784.003-3.567-.003-5.35-1.119.001-2.238-.021-3.357.012Z"></path><path fill="#31324C" d="M11.56 7.62c.19-.063.394-.055.59-.06 1.534.004 3.068.005 4.603 0 .229.005.465-.011.686.06.279.17.293.54.191.818-.124.21-.362.257-.588.249-1.598.005-3.196-.004-4.794.003-.23-.005-.467.012-.688-.06-.338-.216-.338-.795 0-1.01Zm0 4.126c.19-.064.394-.056.592-.061 1.532.004 3.066.005 4.6 0 .23.005.466-.011.688.06.277.17.29.54.19.818-.141.246-.432.253-.684.252-1.63-.003-3.262-.003-4.892 0-.252.001-.544-.005-.684-.252-.102-.277-.087-.648.19-.817Zm0 4.124c.19-.063.394-.055.59-.06 1.63.007 3.261-.001 4.892.004.243-.015.53.059.612.316.044.217.072.502-.116.66-.115.154-.327.13-.496.147-1.599.005-3.196-.004-4.794.003-.23-.005-.467.012-.688-.06-.338-.216-.338-.794 0-1.01Zm.004 4.132c.154-.064.325-.06.49-.066 3.971.002 7.943.002 11.914 0 .323.008.657-.032.972.06.277.17.29.54.19.817-.16.28-.503.247-.78.252-4.162-.01-8.324.008-12.484-.008-.57.065-.752-.787-.302-1.055Zm-.004 4.118c.158-.055.33-.054.494-.06 3.971.004 7.943.004 11.914 0 .323.01.657-.031.972.06.277.17.29.54.19.818-.124.21-.362.257-.588.249-4.035.003-8.07-.003-12.104.002-.292-.006-.594.027-.878-.06-.338-.214-.338-.794 0-1.008Z"></path><path fill="#F93262" d="M19.64 4.274c.17-.104.38-.073.572-.087 1.975.002 3.949-.001 5.923.002.511-.04.94.354 1.18.768.152.211.111.483.123.727-.005 3.942.006 7.883-.004 11.825.053.47-.58.729-.91.434-1.103-.902-2.227-1.78-3.332-2.678-.224-.032-.344.203-.505.312a906.49 906.49 0 0 0-2.96 2.366c-.264.226-.75.133-.877-.2-.057-.232-.034-.474-.04-.712.005-3.847 0-7.694.003-11.541-.038-.536.386-.977.826-1.216Zm1.872 2.625a2.221 2.221 0 0 0-1.363 1.43 4.71 4.71 0 0 0-.01 1.028c.216 1.212 1.124 2.183 2.182 2.753.302.147.608.394.966.31a6.184 6.184 0 0 0 1.73-1.093c.545-.533.946-1.222 1.092-1.971.027-.473.091-.993-.17-1.417-.364-.67-1.096-1.197-1.884-1.126-.413-.051-.768.347-1.18.168a1.827 1.827 0 0 0-1.363-.082Z"></path><path fill="#F93262" d="M21.85 7.96c.166-.026.337-.028.503 0 .265.11.462.395.772.37.371.039.574-.4.937-.387.4-.059.767.234.921.587.163.824-.312 1.614-.921 2.128-.344.286-.794.688-1.266.437-.837-.503-1.67-1.36-1.547-2.414-.004-.35.306-.594.601-.72Z"></path></g></g><defs><clippath id="configurator-wishlist-multicolor_svg__a"><path fill="#fff" d="M0 0h24v24H0z" transform="translate(4 4)"></path></clippath><clippath id="configurator-wishlist-multicolor_svg__b"><path fill="#fff" d="M0 0h24v24H0z" transform="translate(4 4)"></path></clippath></defs></svg></div></div><div class="item-info__Inner-sc-9b8b8aae-1 eugOpa"><div class="item-info__LabelBlock-sc-9b8b8aae-2 jAUnNZ"><div class="item-info__Label-sc-9b8b8aae-3 klKcHF">Missing the settings you need?</div></div><div class="item-info__Caption-sc-9b8b8aae-4 iMEEBY">Request widget features, and we’ll consider them in future updates!</div></div></div></div><div class="item-control__RightSlot-sc-f5fa9495-3 eCqrsQ"></div></div></div><div class="ControlLayout__Container-sc-38f438f1-0 ButtonControl__Container-sc-1464c986-0 fumxeI cZpamD"><div class="ControlLayout__Main-sc-38f438f1-6 eFVywJ"><button class="Interactable__Container-sc-2152aa09-0 cfHKQO ButtonLayout__Container-sc-4151cb4b-1 eerRfU"><div class="ButtonLayout__Inner-sc-4151cb4b-0 bAOZTj">Request a Feature</div></button></div></div></div></div></div></div><div class="GroupLayout__Container-sc-cdd117fe-0 bSHCKn"><div class="GroupLayout__Body-sc-cdd117fe-2 clNbNc"><div class="GroupLayout__Container-sc-cdd117fe-0 bSHCKn"><div class="GroupLayout__Body-sc-cdd117fe-2 clNbNc"><div class="ControlLayout__Container-sc-38f438f1-0 item-control__Container-sc-f5fa9495-0 fumxeI jSxzXr"><div class="item-control__Wrapper-sc-f5fa9495-1 UlcaG"><div class="item-control__Slot-sc-f5fa9495-2 loxrxx"><div class="item-info__Container-sc-9b8b8aae-0 fuQYhp"><div class="Icon__IconContainer-sc-7af45730-0 ezRoNJ"><div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><rect width="32" height="32" fill="#fff" rx="4"></rect><g clip-path="url(#configurator-css-forum-multicolor_svg__a)"><g clip-path="url(#configurator-css-forum-multicolor_svg__b)"><path fill="#31324C" d="M4.187 5.961c-.075-.95.824-1.85 1.774-1.774 6.192.001 12.386.001 18.578 0 .951-.074 1.847.824 1.774 1.774 0 2.787-.001 5.574.001 8.36.002.253-.006.544-.253.684-.23.074-.548.107-.724-.092-.157-.114-.133-.327-.149-.496-.005-1.534.005-3.069-.002-4.603-6.624-.002-13.248-.002-19.872 0-.005 4.878.002 9.756-.003 14.633.016.198-.018.446.157.585.139.176.387.142.585.157 2.506-.003 5.013 0 7.519-.003.252-.003.543.006.683.253.073.23.108.548-.093.724-.138.178-.392.13-.59.151-2.537-.002-5.074-.001-7.61 0-.952.073-1.844-.825-1.775-1.774V5.96Zm1.131-.094c-.015.939-.004 1.878-.004 2.819 6.624.002 13.248.002 19.872 0 0-.94.01-1.88-.004-2.82.021-.268-.184-.538-.462-.54-.405-.033-.813-.008-1.22-.013L6.72 5.312c-.34.004-.682-.022-1.02.025-.243.037-.397.292-.382.53Z"></path><path fill="#31324C" d="M6.686 6.497c.3-.09.63-.08.937-.023.336.116.369.548.258.838-.207.331-.644.253-.975.241-.53 0-.632-.813-.22-1.056Zm2.624 0c.303-.09.631-.08.938-.022.336.116.369.547.258.837-.207.331-.644.252-.976.241-.53-.002-.63-.813-.219-1.056Zm2.626 0c.302-.09.63-.08.937-.022.336.116.368.547.258.836-.207.331-.644.253-.976.242-.53 0-.63-.813-.22-1.056ZM7.061 11.37c.19-.063.392-.055.589-.06 1.349.005 2.698.003 4.047 0 .178.019.394-.016.537.111.316.235.263.83-.113.974-.296.069-.603.038-.904.045-1.312-.015-2.626.017-3.938-.015-.53.004-.629-.811-.218-1.054Zm1.501 2.625c.345-.097.71-.047 1.063-.06.354.013.72-.037 1.064.06.278.17.292.539.192.816-.183.31-.574.241-.878.254-.458-.016-.922.036-1.376-.04-.408-.15-.422-.811-.065-1.03Zm3.748 0c.158-.055.328-.054.493-.06 3.538.005 7.075 0 10.614.003.244-.016.53.061.613.32.043.215.07.499-.117.655-.14.178-.393.13-.591.151-3.538-.004-7.076.001-10.614-.002-.227.009-.465-.04-.588-.25-.102-.278-.087-.648.19-.817ZM8.562 16.62c.345-.097.71-.047 1.063-.06.354.013.72-.037 1.064.06.278.17.292.539.192.816-.184.31-.574.241-.878.254-.458-.016-.922.036-1.376-.04-.407-.15-.423-.811-.065-1.03Zm3.748 0c.502-.108 1.026-.056 1.535-.044.587-.016.64 1.01.08 1.088-.49.041-.986.041-1.474 0-.474-.073-.52-.816-.14-1.043Zm-5.248 2.625c.188-.063.392-.056.589-.06 2.005.007 4.01-.001 6.016.004.244-.016.531.06.613.32.043.214.07.498-.117.655-.14.177-.393.13-.591.15-2.038-.004-4.075.001-6.114-.002-.227.008-.465-.04-.59-.25-.1-.278-.085-.648.194-.817ZM8.56 21.87c.626-.116 1.276-.048 1.91-.045.587-.015.64 1.01.08 1.089-.588.046-1.18.03-1.77.011-.531.004-.63-.812-.219-1.055Zm3.752 0c.5-.108 1.024-.056 1.533-.044.587-.015.64 1.01.08 1.088-.49.041-.986.041-1.474 0-.474-.073-.52-.817-.14-1.044Z"></path><path fill="#F93262" d="M16.264 16.275c.171-.105.381-.075.571-.088h9.102c.306.003.616-.016.921.03.5.213.983.691.953 1.272.004 2.974 0 5.95.002 8.926.067.743-.656 1.466-1.398 1.398H17.5c-.368-.007-.74.023-1.107-.032-.536-.223-1.029-.75-.956-1.367.001-2.975-.001-5.95.001-8.925-.036-.534.384-.979.826-1.214Zm2.815 2.985c-.693.749-1.305 1.57-1.98 2.336a.582.582 0 0 0 0 .808c.638.737 1.243 1.503 1.88 2.242.276.347.939.134.956-.313.056-.256-.13-.457-.28-.639-.443-.472-.8-1.019-1.263-1.474-.121-.088-.174-.283-.045-.39.504-.505.909-1.097 1.39-1.624.225-.218.303-.64.04-.855-.168-.196-.485-.215-.698-.091Zm2.613-.022c-.34.225-.214.67-.345 1.001-.135.373-.059.786-.196 1.158-.122.353-.055.74-.175 1.093-.144.395-.06.835-.224 1.227-.062.318-.166.759.146.983.267.217.742.123.871-.212.064-.24.05-.494.132-.73.14-.383.059-.807.204-1.19.114-.342.052-.717.167-1.06.146-.382.06-.808.21-1.189.102-.286.075-.594.048-.89a.786.786 0 0 0-.838-.19Zm1.882.012c-.134.106-.266.232-.262.417-.058.282.167.492.33.688.4.419.713.913 1.124 1.322.108.118.293.265.182.442-.423.43-.78.918-1.17 1.376-.198.246-.524.484-.465.838.012.45.683.66.96.312.635-.74 1.247-1.497 1.88-2.24a.587.587 0 0 0 0-.81c-.632-.742-1.247-1.5-1.88-2.24-.16-.214-.479-.207-.699-.105Z"></path></g></g><defs><clippath id="configurator-css-forum-multicolor_svg__a"><path fill="#fff" d="M0 0h24v24H0z" transform="translate(4 4)"></path></clippath><clippath id="configurator-css-forum-multicolor_svg__b"><path fill="#fff" d="M0 0h24v24H0z" transform="translate(4 4)"></path></clippath></defs></svg></div></div><div class="item-info__Inner-sc-9b8b8aae-1 eugOpa"><div class="item-info__LabelBlock-sc-9b8b8aae-2 jAUnNZ"><div class="item-info__Label-sc-9b8b8aae-3 klKcHF">Looking for ready-to-use CSS?</div></div><div class="item-info__Caption-sc-9b8b8aae-4 iMEEBY">Find the CSS you need on our forum, where users share their solutions.</div></div></div></div><div class="item-control__RightSlot-sc-f5fa9495-3 eCqrsQ"></div></div></div><div class="ControlLayout__Container-sc-38f438f1-0 ButtonControl__Container-sc-1464c986-0 fumxeI cZpamD"><div class="ControlLayout__Main-sc-38f438f1-6 eFVywJ"><button class="Interactable__Container-sc-2152aa09-0 cfHKQO ButtonLayout__Container-sc-4151cb4b-1 eerRfU"><div class="ButtonLayout__Inner-sc-4151cb4b-0 bAOZTj">Explore the Forum</div></button></div></div></div></div></div></div></div></div></div></div></div><div class="Modal__TriggerArea-sc-f058ac83-0 dZRXWX"></div></div><div class="ViewportSelector__Container-sc-c23c8424-0 ehqzYl"><div class="Tooltip__TooltipTarget-sc-1881ee5b-0 NbpZQ"><button class="Interactable__Container-sc-2152aa09-0 cfHKQO ViewportSelector__ItemContainer-sc-c23c8424-1 fcjcKy"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M15 3a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6Zm-3 14.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2ZM15 4H9a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Z"></path></svg></button></div></div><div class="PreviewShell__Container-sc-25fcc78f-0 eObnxf"><div class="PreviewShell__View-sc-25fcc78f-3 bjrJna"><div class="PreviewShell__LoaderOverlay-sc-25fcc78f-2 bBrwmp"><div class="Loader__Container-sc-b2f73939-0 fSTSFj PreviewShell__StyledLoader-sc-25fcc78f-1 jGtZmF" data-testid="configurator-loader"><div class="Loader__Spinner-sc-b2f73939-1 gIbykl"></div></div></div><div data-target="preview-modal" class="ModalNest-sc-347ae95-0 jWkzAp"></div><iframe id="previewFrame" src="./index(1).html" allow="autoplay; fullscreen" class="Preview__Frame-sc-897936ba-0 iMRFWJ"></iframe></div></div></div></div></div>
+    <script src="./configurator-Bl6pPXz4.js.download" type="module"></script>
+    
+  
+<textarea tabindex="-1" aria-hidden="true" style="min-height: 0px !important; max-height: none !important; height: 0px !important; visibility: hidden !important; overflow: hidden !important; position: absolute !important; z-index: -1000 !important; top: 0px !important; right: 0px !important; display: block !important; border-width: 0px; box-sizing: border-box; font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; line-height: 20px; padding: 0px; tab-size: 8; text-indent: 0px; text-rendering: auto; text-transform: none; width: 268px; word-break: normal; word-spacing: 0px; scrollbar-gutter: auto;"></textarea></body></html>

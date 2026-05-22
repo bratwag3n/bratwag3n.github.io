@@ -1,0 +1,222 @@
+/* Begin General Page Content and Headers */
+#page {
+  background-color: #B56576;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+iframe {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.page-header {
+  width: 100%;
+  box-sizing: border-box;
+  background: #F6E8EA;
+  padding: 0.5rem;
+}
+
+.page-header h1 {
+  margin: 0;
+  text-align: center;
+  width: auto;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+h1 {
+  font-size: 10vi;
+  color: #5A0001;
+  align-items: center;
+  font-family: 'Pincoya', sans-serif;
+  background: #ffffff;
+  padding: 0.5rem;
+  padding-bottom: 0%;
+  width: auto;
+}
+
+h2 {
+  font-size: 5vi;
+  color: #000000;
+  text-align: center;
+  font-family: 'Powerpuff Girls', sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+h3 {
+  font-size: 2vi;
+  color: #000000;
+  text-align: center;
+  font-family: 'Designer', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  background-color: #B56576;
+}
+
+@media (orientation: portrait) {
+    h2{
+    font-size: 12vi;
+    }
+    h3{
+    font-size: 8vi;
+    }
+}
+
+.subheading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0%;
+    }
+
+#header-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+#header-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#site-nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin: 0;
+  font-family: Designer, sans-serif;
+  color: #F6E8EA;
+  background: #000000;
+  padding: .5rem;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+#site-nav a {
+  text-decoration: none;
+  color: inherit;
+  flex: 1;
+  text-align: center;
+  vertical-align: center;
+}
+
+/* STOP DELETING THIS THIS IS IMPORTANT */
+* {
+  box-sizing: border-box;
+}
+
+/* Begin Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: auto auto 1fr; 
+  gap: 15px; 
+  align-items: start;
+  background-color: #B56576;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.grid-container img {
+  max-width: 100%;
+  height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 5px;
+    overflow: hidden;
+}
+
+.horizontal{
+    grid-column: span 2;
+}
+.vertical {
+    grid-row: span 2;
+}
+.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+@media (orientation: portrait) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto auto auto; 
+    }
+    .horizontal{
+        grid-column: span 1;
+    }
+    .vertical {
+        grid-row: span 1;
+    }
+    .big{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+/* fonts! */
+@font-face {
+  font-family: 'Fat Kat';
+  src: url('Fonts/Fat Kat - (Demo) hanscostudio.com.woff2') format('woff2'),
+       url('Fonts/Fat Kat - (Demo) hanscostudio.com.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('Fonts/Minecraft.ttf') format('truetype'),
+         url('Fonts/Minecraft.woff') format('woff'),
+         url('Fonts/Minecraft.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monospace Typewriter';
+    src: url('Fonts/MonospaceTypewriter.ttf') format('truetype'),
+         url('Fonts/MonospaceTypewriter.woff') format('woff'),
+         url('Fonts/MonospaceTypewriter.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Designer;
+    src: url('Fonts/Designer.regular.ttf') format('truetype'),
+         url('Fonts/Designer.woff') format('woff'),
+         url('Fonts/Designer.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Pincoya;
+    src: url('Fonts/Pincoyablack-Black.ttf') format('truetype'),
+         url('Fonts/pincoyablack.woff') format('woff'),
+         url('Fonts/pincoyablack.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: powerpuff girls;
+    src: url('Fonts/powerpuff girls font.ttf') format('truetype'),
+         url('Fonts/PowerpuffGirls.woff') format('woff'),
+         url('Fonts/PowerpuffGirls.woff2') format('woff2');
+}
