@@ -86,10 +86,11 @@ h3 {
 .subheading {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
     margin: 0%;
+    padding: 0%;
     }
 
 #header-image {
@@ -274,6 +275,26 @@ left-column-stack {
   right: 0;
   width: 100%;
   text-align: center;
+}
+
+@media (orientation: portrait) {
+  .dots-container {
+    bottom: 10px;
+  }
+  .text {
+    bottom: 40px;
+    color: #000000;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 535px;
+    width: 100%;
+    text-align: center;
+  }
+  .slideshow-container {
+    padding-bottom: 0%;
+  }
 }
 
 /* Next & previous buttons */
