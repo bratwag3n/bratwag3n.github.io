@@ -71,11 +71,10 @@ h3 {
   color: #000000;
   text-align: center;
   font-family: 'Designer', sans-serif;
-  margin: 0%;
-  padding: 0%;
+  margin: 1%;
+  padding: 5px;
   background-color: #ffffff;
   box-sizing: border-box;
-  padding: 0.5rem;
   border-radius: 5px;
 }
 h4{
@@ -264,11 +263,12 @@ left-column-stack {
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  max-height: 600px;
+  max-height: auto;
   position: relative;
+  overflow: hidden;
   margin: auto;
   padding: 1rem;
-  overflow: hidden;
+ 
   background-image: url(Media/Free_Cherry_Navy_Pink_Digital_Papers_FPTFY_4.jpg);
   background-size: cover;
   background-position: center;
@@ -281,7 +281,7 @@ left-column-stack {
 
 .mySlides img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -290,7 +290,7 @@ left-column-stack {
 /* Container for the dots */
 .dots-container {
   position: absolute;
-  bottom: 10px;
+  bottom: 50px;
   left: 0;
   right: 0;
   width: 100%;
@@ -349,13 +349,13 @@ left-column-stack {
   font-family: Helvetica, sans-serif;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
+ 
   bottom: 490px;
   width: 100%;
   text-align: center;
   background-color: #ffffff;
   box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 /* Number text (1/3 etc) */
