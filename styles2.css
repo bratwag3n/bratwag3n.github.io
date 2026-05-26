@@ -91,7 +91,6 @@ h3 {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    padding-bottom: 100%;
     background-color: #B56576;
 }
 
@@ -158,6 +157,10 @@ h3 {
   flex: 1;
   text-align: center;
   vertical-align: center;
+}
+
+#page-wrapper{
+  padding-bottom: 25rem;
 }
 
 /* STOP DELETING THIS THIS IS IMPORTANT */

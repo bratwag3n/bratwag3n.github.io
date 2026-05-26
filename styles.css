@@ -70,7 +70,7 @@ h3 {
   font-size: 2vi;
   color: #000000;
   text-align: center;
-  font-family: 'Designer', sans-serif;
+  font-family: 'Powerpuff Girls', sans-serif;
   margin: 1%;
   padding: 5px;
   background-color: #ffffff;
@@ -128,6 +128,7 @@ h4{
   gap: 1rem;
   margin: 0;
   font-family: Designer, sans-serif;
+  font-size: larger;
   color: #F6E8EA;
   background: #000000;
   padding: .5rem;
@@ -400,6 +401,7 @@ left-column-stack {
   height: auto;
   display: block;
   justify-content: center;
+  align-items: start;
   margin: 1rem;
 }
 
