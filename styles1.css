@@ -3,7 +3,17 @@
 }
 
 #page {
-  background-color: #B56576;
+  background-image:url(Media/sunsetbkg.gif);
+  background-repeat:no-repeat;
+  background-size:cover;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.page-wrapper{
+  width: 90%;
+  margin: 0 auto;
+
 }
 
 body {
@@ -23,8 +33,7 @@ iframe {
 .page-header {
   width: 100%;
   box-sizing: border-box;
-  background: #F6E8EA;
-  padding: 0.5rem;
+
 }
 
 .page-header h1 {
@@ -36,11 +45,10 @@ iframe {
 }
 
 h1 {
-  font-size: 10vi;
+  font-size: 12vi;
   color: #5A0001;
   align-items: center;
   font-family: 'Pincoya', sans-serif;
-  background: #ffffff;
   padding: 0.5rem;
   padding-bottom: 0%;
   width: auto;
@@ -52,12 +60,13 @@ h1 {
 }
 
 h2 {
-  font-size: 10vi;
+  font-size: 3vi;
   color: #000000;
   text-align: center;
-  font-family: 'Powerpuff Girls', sans-serif;
+  font-family: 'VCR_OSD_MONO', sans-serif;
   margin: 0%;
   padding: 0%;
+  text-transform: uppercase;
 }
 
 @media (orientation: landscape) {
@@ -70,13 +79,15 @@ h3 {
   font-size: 2vi;
   color: #000000;
   text-align: center;
-  font-family: 'Powerpuff Girls', sans-serif;
+  font-family: 'VCR_OSD_MONO', sans-serif;
   margin: 1%;
   padding: 5px;
   background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 5px;
+  text-transform: uppercase;
 }
+
 h4{
   font-size: 2vi;
   color: #000000;
@@ -86,6 +97,21 @@ h4{
   padding: 0%;
   padding: 0.5rem;
   border-radius: 5px;
+}
+
+h5{
+ font-size: 2vi;
+  color: #F4E3BB;
+  text-align: center;
+  font-family: 'VCR_OSD_MONO', sans-serif;
+  margin: 1%;
+  padding: 5px;
+  text-transform: uppercase; 
+  text-decoration: none;
+}
+
+h5 a{
+  text-decoration: none;
 }
 
 @media (orientation: portrait){
@@ -124,17 +150,19 @@ h4{
 
 #site-nav {
   display: flex;
+  position: fixed;
   justify-content: space-evenly;
   gap: 1rem;
   margin: 0;
-  font-family: Designer, sans-serif;
+  font-family: VCR_OSD_MONO, sans-serif;
   font-size: larger;
-  color: #F6E8EA;
-  background: #000000;
+  color: #F4E3BB;
+  background: #5A0001;
   padding: .5rem;
   width: 100%;
   box-sizing: border-box;
   max-width: 100%;
+  z-index: 1000;
 }
 
 #site-nav a {
@@ -144,12 +172,7 @@ h4{
   text-align: center;
   vertical-align: center;
 }
-.horizontal-row {
-  display: flex;
-  flex-direction: row; 
-  box-sizing: border-box;
-  padding: 10px;
-}
+
 @media (orientation: portrait){
     .horizontal-row {
         flex-direction: column;
@@ -159,6 +182,54 @@ h4{
         height: 100% !important;
         object-fit: contain !important;
     }
+}
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  grid-template-rows: auto auto 1fr; 
+  gap: 15px; 
+  padding: 10px;
+  align-items: start;
+  box-sizing: border-box;
+  grid-auto-flow: dense;
+}
+
+.leftitm{
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+}
+
+.rightitem{
+  grid-column: 2;
+  grid-row: 1/2;
+  width: 100%;
+}
+.window{
+  background-color:#5A0001;
+  width: 100%;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.window-body{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: VCR_OSD_MONO, sans-serif;
+  text-decoration: none;
+}
+
+.window-body a{
+  font-family: VCR_OSD_MONO, sans-serif;
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  height: 40rem;
+  border-radius: 5px;
 }
 
 .grid-container {
@@ -172,7 +243,7 @@ h4{
   grid-auto-flow: dense;
 }
 
-left-column-stack {
+.left-column-stack {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -197,7 +268,6 @@ left-column-stack {
   align-items: flex-start;
   padding: 1%;
   margin: 0%;
-  background-image: url(Media/Free_Cherry_Navy_Pink_Digital_Papers_FPTFY_8.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -263,14 +333,14 @@ left-column-stack {
 }
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 900px;
   max-height: auto;
   position: relative;
   overflow: hidden;
   margin: auto;
   padding: 1rem;
- 
-  background-image: url(Media/Free_Cherry_Navy_Pink_Digital_Papers_FPTFY_4.jpg);
+  border-radius: 5px;
+  background-color: #5A0001;
   background-size: cover;
   background-position: center;
 }
@@ -347,10 +417,9 @@ left-column-stack {
 
 .text {
   color: #000000;
-  font-family: Helvetica, sans-serif;
+  font-family: VCR_OSD_MONO, sans-serif;
   font-size: 15px;
   padding: 8px 12px;
- 
   bottom: 490px;
   width: 100%;
   text-align: center;
@@ -403,19 +472,6 @@ left-column-stack {
   justify-content: center;
   align-items: start;
   margin: 1rem;
-}
-
-#comment-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 500vh;
-}
-#iframe {
-  width: 100%;
-  height: 100%;
 }
 
 #header__inner {
@@ -501,4 +557,14 @@ left-column-stack {
     src: url('Fonts/powerpuff girls font.ttf') format('truetype'),
          url('Fonts/PowerpuffGirls.woff') format('woff'),
          url('Fonts/PowerpuffGirls.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: BLUE-OCEAN;
+  src: url(Fonts/BLUE-OCEAN.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: VCR_OSD_MONO;
+  src: url(Fonts/VCR_OSD_MONO_1.001.ttf);
 }
