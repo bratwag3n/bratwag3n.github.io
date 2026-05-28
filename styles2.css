@@ -3,11 +3,21 @@
 }
 
 #page {
-  background-image:url(Media/sunsetbkg.gif);
+  background-image:url(Media/CustomOcean.png);
   background-repeat:no-repeat;
   background-size:cover;
   overflow: hidden;
   background-attachment: fixed;
+}
+
+@media (orientation: portrait) {
+  #page{
+    background-image: url(Media/CustomOceanportrait.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+   overflow: hidden;
+    background-attachment: fixed;
+  }
 }
 
 .page-wrapper{
@@ -46,7 +56,7 @@ iframe {
 
 h1 {
   font-size: 12vi;
-  color: #5A0001;
+  color: #003d6a;
   align-items: center;
   font-family: 'Pincoya', sans-serif;
   padding: 0.5rem;
@@ -61,12 +71,18 @@ h1 {
 
 h2 {
   font-size: 3vi;
-  color: #000000;
+  color: #F4E3BB;
+  background-color: #003d6a;
   text-align: center;
   font-family: 'VCR_OSD_MONO', sans-serif;
   margin: 0%;
-  padding: 0%;
+  margin-left: 20%;
+  margin-right: 20%;
   text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 0.5rem;
+  box-sizing: border-box;
 }
 
 @media (orientation: landscape) {
@@ -81,6 +97,8 @@ h3 {
   text-align: center;
   font-family: 'VCR_OSD_MONO', sans-serif;
   margin: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
   padding: 5px;
   background-color: #ffffff;
   box-sizing: border-box;
@@ -110,19 +128,25 @@ h5{
   text-decoration: none;
 }
 
-.subheading {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
-    font-family: 'VCR_OSD_MONO', sans-serif;
-    font-size: 3vi;
-    color: #000000;
-    text-transform: uppercase;
-    text-decoration: none;
+.subheading a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: 0%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'VCR_OSD_MONO', sans-serif;
+  font-size: 3vi;
+  color: #F4E3BB;
+  background-color: #003d6a;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 0.5rem;
+  box-sizing: border-box;
+
  }
 
 @media (orientation: portrait) {
@@ -152,13 +176,13 @@ h5{
     margin-top: 1%;
     margin-bottom: 1%;
     font-family: 'VCR_OSD_MONO', sans-serif;
-    color: #F6E8EA;
+    color: #F4E3BB;
     font-size: 3vi;
     border-radius: 5px;
     text-decoration: none;
     padding: 0.5rem;
     box-sizing: border-box;
-    background-color: #5A0001;
+    background-color: #003d6a;
     }
 
 @media (orientation: portrait) {
@@ -182,7 +206,7 @@ h5{
   font-family: VCR_OSD_MONO, sans-serif;
   font-size: larger;
   color: #F4E3BB;
-  background: #5A0001;
+  background: #003d6a;
   padding: .5rem;
   width: 100%;
   box-sizing: border-box;

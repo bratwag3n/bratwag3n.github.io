@@ -3,7 +3,7 @@
 }
 
 #page {
-  background-image:url(Media/sunsetbkg.gif);
+  background-image:url(Media/customsunset.png);
   background-repeat:no-repeat;
   background-size:cover;
   overflow: hidden;
@@ -11,7 +11,7 @@
 }
 
 .page-wrapper{
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 
 }
@@ -223,6 +223,7 @@ h5 a{
 
 .window-body a{
   font-family: VCR_OSD_MONO, sans-serif;
+  text-decoration: none;
 }
 
 iframe {
