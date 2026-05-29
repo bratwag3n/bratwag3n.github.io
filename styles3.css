@@ -73,7 +73,7 @@ h1 {
 }
 @media (orientation: portrait) {
   h1 {
-    font-size: 15vi;
+    font-size: 20vi;
     margin-top: 15%;
     padding-top: 10%;
   }
