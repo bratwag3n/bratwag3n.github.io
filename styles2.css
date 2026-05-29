@@ -151,8 +151,11 @@ h5{
   text-decoration: none;
   padding: 0.5rem;
   box-sizing: border-box;
-
  }
+
+.subheading a:hover {
+  filter: drop-shadow(0 4px 8px rgba(0,0,128,0.8));
+}
 
 @media (orientation: portrait) {
     h2{
@@ -189,7 +192,11 @@ h5{
     padding: 0.5rem;
     box-sizing: border-box;
     background-color: #003d6a;
-    }
+ }
+
+ #gallery-links a:hover {
+  filter: drop-shadow(0 4px 8px rgba(0,0,128,0.8));
+}
 
 @media (orientation: portrait) {
     #gallery-links a {
