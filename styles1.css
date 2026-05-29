@@ -3,7 +3,7 @@
 }
 
 #page {
-  background-image:url(Media/customsunset.png);
+  background-image:url(Media/sunsetbkgd.png);
   background-repeat:no-repeat;
   background-size:cover;
   overflow: hidden;
@@ -331,6 +331,7 @@ iframe {
   justify-content: center;
   margin: 1%;
   padding: 1%;
+  border-radius: 5px;
 }
 
 .button-slideshow{
