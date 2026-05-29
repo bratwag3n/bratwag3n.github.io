@@ -56,6 +56,7 @@ h1 {
 @media (orientation: portrait) {
   h1 {
     font-size: 15vi;
+    padding-top: 10%;
   }
 }
 
@@ -132,22 +133,6 @@ h5 a{
     padding: 0%;
     }
 
-#header-image {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  overflow: hidden;
-  display: block;
-}
-
-#header-image img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  overflow: hidden;
-}
-
 #site-nav {
   display: flex;
   position: fixed;
@@ -205,6 +190,21 @@ h5 a{
   grid-row: 1/2;
   width: 100%;
 }
+
+@media (orientation: portrait) {
+  .leftitm{
+    grid-column: 1;
+    grid-row: 1;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important; 
+  }
+  .rightitem{
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
 .window{
   background-color:#5A0001;
   width: 100%;
