@@ -24,6 +24,7 @@
 .page-wrapper{
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 12rem;
 
 }
 
@@ -235,10 +236,6 @@ h5{
   vertical-align: center;
 }
 
-#page-wrapper{
-  padding-bottom: 25rem;
-}
-
 /* STOP DELETING THIS THIS IS IMPORTANT */
 * {
   box-sizing: border-box;
@@ -275,6 +272,11 @@ h5{
 .big{
     grid-column: span 2;
     grid-row: span 2;
+}
+
+#surfbear{
+  width: 20rem;
+  padding-bottom: 0%;
 }
 
 @media (orientation: portrait) {

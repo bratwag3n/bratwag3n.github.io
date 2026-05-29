@@ -402,7 +402,8 @@ h5 a{
   }
   .text {
     bottom: 40px;
-    color: #000000;
+    color: #f8ce2f;
+    background-color: #250020;
     font-family: Helvetica, sans-serif;
     font-size: 15px;
     padding: 8px 12px;
@@ -444,14 +445,14 @@ h5 a{
 }
 
 .text {
-  color: #000000;
+  color: #f8ce2f;
+  background-color: #250020;
   font-family: VCR_OSD_MONO, sans-serif;
   font-size: 15px;
   padding: 8px 12px;
   bottom: 490px;
   width: 100%;
   text-align: center;
-  background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 3px;
 }
