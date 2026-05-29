@@ -116,7 +116,7 @@ h3 {
 
 h4{
   font-size: 2vi;
-  color: #000000;
+  color: #F4E3BB;
   text-align: center;
   font-family: 'VCR_OSD_MONO', sans-serif;
   text-transform: uppercase;
@@ -155,11 +155,11 @@ h4{
     padding-bottom: 15rem;
     font-family: 'VCR_OSD_MONO',sans-serif;
     font-size: 2vi;
-    color: #F6E8EA;
+    color: #F4E3BB;
 }
 
 #about-and-resources-text a{
-    color: #F6E8EA;
+    color: #F4E3BB;
     background: #1a001b;
     padding: 0.5rem;
     box-sizing: border-box;
