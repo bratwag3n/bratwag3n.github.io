@@ -175,6 +175,9 @@ h4{
     h3{
     font-size: 8vi;
     }
+    h4{
+    padding: 1rem;   
+    }
     #gallery-links a {
         font-size: 5vi;
     }
@@ -183,7 +186,6 @@ h4{
     padding-top: 0%;
     justify-content: center;
     text-align: center;
-    vertical-align: top;
     font-family: 'VCR_OSD_MONO',sans-serif;
     font-size: 5vi;
     color: #F6E8EA;
@@ -192,6 +194,8 @@ h4{
     color: #F6E8EA;
     background: #1a001b;
     padding: 0.5rem;
+    margin: 0.5rem;
+    margin-top: 1rem;
     box-sizing: border-box;
     font-family: 'VCR_OSD_MONO', sans-serif;
     border-radius: 5px;

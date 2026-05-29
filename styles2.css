@@ -14,8 +14,9 @@
   #page{
     background-image: url(Media/CustomOceanportrait.png);
     background-repeat:no-repeat;
-    background-size:cover;
-   overflow: hidden;
+    background-size:contain;
+    background-position: top center;
+    overflow: hidden;
     background-attachment: fixed;
   }
 }
