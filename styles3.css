@@ -1,0 +1,257 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#page {
+  background-image:url(Media/customspacebkgd.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.page-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(218, 50, 400, 0.25);
+    
+}
+
+#site-nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin: 0;
+  font-family: VCR_OSD_MONO, sans-serif;
+  font-size: larger;
+  color: #F4E3BB;
+  background: #1a001b;
+  padding: .5rem;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  z-index: 1000;
+}
+
+#site-nav a {
+  text-decoration: none;
+  color: inherit;
+  flex: 1;
+  text-align: center;
+  vertical-align: center;
+}
+
+.page-header {
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 5%;
+}
+
+.page-header h1 {
+  margin: 0;
+  text-align: center;
+  width: auto;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+h1 {
+  font-size: 12vi;
+  color: #F4E3BB;
+  align-items: center;
+  font-family: 'Pincoya', sans-serif;
+  padding: 0.5rem;
+  padding-bottom: 0%;
+  width: auto;
+}
+@media (orientation: portrait) {
+  h1 {
+    font-size: 15vi;
+    margin-top: 15%;
+    padding-top: 10%;
+  }
+}
+
+h2 {
+  font-size: 3vi;
+  color: #F4E3BB;
+  background-color: #1a001b;
+  text-align: center;
+  font-family: 'VCR_OSD_MONO', sans-serif;
+  margin: 0%;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+@media (orientation: landscape) {
+  h2 {
+    font-size: 5vi;
+  }
+}
+
+h3 {
+  font-size: 2vi;
+  color: #000000;
+  text-align: center;
+  font-family: 'VCR_OSD_MONO', sans-serif;
+  margin: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 5px;
+  background-color: #1a001b;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+h4{
+  font-size: 2vi;
+  color: #000000;
+  text-align: center;
+  font-family: 'VCR_OSD_MONO', sans-serif;
+  text-transform: uppercase;
+  margin: 0%;
+  padding: 0%;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.subheading a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: 0%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'VCR_OSD_MONO', sans-serif;
+  font-size: 3vi;
+  color: #F4E3BB;
+  background-color: #1a001b;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 0.5rem;
+  box-sizing: border-box;
+ }
+
+ #about-and-resources-text {
+    padding: 1rem;
+    padding-top: 0%;
+    justify-content: center;
+    text-align: center;
+    vertical-align: top;
+    padding-bottom: 15rem;
+    font-family: 'VCR_OSD_MONO',sans-serif;
+    font-size: 2vi;
+    color: #F6E8EA;
+}
+
+#about-and-resources-text a{
+    color: #F6E8EA;
+    background: #1a001b;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-family: 'VCR_OSD_MONO', sans-serif;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+@media (orientation: portrait) {
+    h2{
+    font-size: 12vi;
+    }
+    h3{
+    font-size: 8vi;
+    }
+    #gallery-links a {
+        font-size: 5vi;
+    }
+     #about-and-resources-text {
+    padding: 1rem;
+    padding-top: 0%;
+    justify-content: center;
+    text-align: center;
+    vertical-align: top;
+    font-family: 'VCR_OSD_MONO',sans-serif;
+    font-size: 5vi;
+    color: #F6E8EA;
+}
+    #about-and-resources-text a{
+    color: #F6E8EA;
+    background: #1a001b;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-family: 'VCR_OSD_MONO', sans-serif;
+    border-radius: 5px;
+    text-decoration: none;
+    }
+}
+
+/* fonts! */
+@font-face {
+  font-family: 'Fat Kat';
+  src: url('Fonts/Fat Kat - (Demo) hanscostudio.com.woff2') format('woff2'),
+       url('Fonts/Fat Kat - (Demo) hanscostudio.com.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('Fonts/Minecraft.ttf') format('truetype'),
+         url('Fonts/Minecraft.woff') format('woff'),
+         url('Fonts/Minecraft.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monospace Typewriter';
+    src: url('Fonts/MonospaceTypewriter.ttf') format('truetype'),
+         url('Fonts/MonospaceTypewriter.woff') format('woff'),
+         url('Fonts/MonospaceTypewriter.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Designer;
+    src: url('Fonts/Designer.regular.ttf') format('truetype'),
+         url('Fonts/Designer.woff') format('woff'),
+         url('Fonts/Designer.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Pincoya;
+    src: url('Fonts/Pincoyablack-Black.ttf') format('truetype'),
+         url('Fonts/pincoyablack.woff') format('woff'),
+         url('Fonts/pincoyablack.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: powerpuff girls;
+    src: url('Fonts/powerpuff girls font.ttf') format('truetype'),
+         url('Fonts/PowerpuffGirls.woff') format('woff'),
+         url('Fonts/PowerpuffGirls.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: VCR_OSD_MONO;
+  src: url(Fonts/VCR_OSD_MONO_1.001.ttf);
+}

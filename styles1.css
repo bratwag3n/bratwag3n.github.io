@@ -485,16 +485,7 @@ iframe {
   border-color: black;
 }
 
-#about-and-resources-text {
-    padding: 1rem;
-    padding-top: 0%;
-    justify-content: center;
-    text-align: center;
-    vertical-align: top;
-    padding-bottom: 15rem;
-    font-family: Helvetica,sans-serif;
-    font-size: 2vi;
-}
+
 @media (orientation: portrait) {
   #about-and-resources-text {
     font-size: 4vi;
@@ -502,14 +493,7 @@ iframe {
   }
     
 }
-#about-and-resources-text a{
-    color: #F6E8EA;
-    background: #5A0001;
-    padding: 0.5rem;
-    box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
-    border-radius: 5px;
-    text-decoration: none;}
+
 @font-face {
   font-family: 'Fat Kat';
   src: url('Fonts/Fat Kat - (Demo) hanscostudio.com.woff2') format('woff2'),
