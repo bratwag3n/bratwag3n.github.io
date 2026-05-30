@@ -246,7 +246,6 @@ h5 a{
 
 #guestbook{
   margin: 1%;
-  padding-top: 1%;
 }
 
 #guestbook:hover {
@@ -402,8 +401,8 @@ h5 a{
   }
   .text {
     bottom: 40px;
-    color: #f8ce2f;
-    background-color: #250020;
+    color: #250020;
+    background-color: #f8ce2f;
     font-family: Helvetica, sans-serif;
     font-size: 15px;
     padding: 8px 12px;
@@ -439,14 +438,19 @@ h5 a{
   border-radius: 3px 0 0 3px;
 }
 
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
 .text {
-  color: #f8ce2f;
-  background-color: #250020;
+  color: #250020;
+  background-color: #f8ce2f;
   font-family: VCR_OSD_MONO, sans-serif;
   font-size: 15px;
   padding: 8px 12px;
@@ -578,5 +582,7 @@ h5 a{
 
 @font-face {
   font-family: VCR_OSD_MONO;
-  src: url(Fonts/VCR_OSD_MONO_1.001.ttf);
+  src: url(Fonts/VCR_OSD_MONO_1.001.ttf) format('truetype'),
+    url(Fonts/VCROSDMono.woff) format('woff'),
+    url(Fonts/VCROSDMono.woff2) format('woff2');
 }

@@ -279,6 +279,10 @@ h5{
   padding-bottom: 0%;
 }
 
+#surfbear a:hover {
+  filter: drop-shadow(0 4px 8px rgba(0,0,128,0.8));
+}
+
 @media (orientation: portrait) {
     .grid-container {
         grid-template-columns: 1fr; 
@@ -349,5 +353,7 @@ h5{
 
 @font-face {
   font-family: VCR_OSD_MONO;
-  src: url(Fonts/VCR_OSD_MONO_1.001.ttf);
+  src: url(Fonts/VCR_OSD_MONO_1.001.ttf) format('truetype'),
+    url(Fonts/VCROSDMono.woff) format('woff'),
+    url(Fonts/VCROSDMono.woff2) format('woff2');
 }

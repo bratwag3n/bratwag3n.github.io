@@ -152,7 +152,6 @@ h4{
     justify-content: center;
     text-align: center;
     vertical-align: top;
-    padding-bottom: 15rem;
     font-family: 'VCR_OSD_MONO',sans-serif;
     font-size: 2vi;
     color: #F4E3BB;
@@ -169,6 +168,10 @@ h4{
 }
 
 #about-and-resources-text a:hover {
+  filter: drop-shadow(0 4px 8px rgba(128,0,128,0.8));
+}
+
+#spacebear a:hover {
   filter: drop-shadow(0 4px 8px rgba(128,0,128,0.8));
 }
 
@@ -260,5 +263,7 @@ h4{
 
 @font-face {
   font-family: VCR_OSD_MONO;
-  src: url(Fonts/VCR_OSD_MONO_1.001.ttf);
+  src: url(Fonts/VCR_OSD_MONO_1.001.ttf) format('truetype'),
+    url(Fonts/VCROSDMono.woff) format('woff'),
+    url(Fonts/VCROSDMono.woff2) format('woff2');
 }
