@@ -19,6 +19,12 @@
   .page-wrapper{
     width: 100%;
   }
+  #page{    
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: top center;
+    overflow: hidden;
+    background-attachment: fixed;}
 }
 
 body {
